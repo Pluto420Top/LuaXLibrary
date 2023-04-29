@@ -1,4 +1,4 @@
-Library = {}
+_G.Library = {}
 -----------[['Library']]--------------------
 
 LocalPlayer = game:GetService('Players').LocalPlayer
@@ -10,10 +10,12 @@ UIS = game:GetService('UserInputService')
 
 ScreenGui = nil
 Frame = nil
+
+
 -------------------['UI Things']-------------
 
 
-function Library:CreateWindow(WindowName, TabName)
+function _G.Library:CreateWindow(WindowName, TabName)
 	local ScreenGui = Instance.new('ScreenGui', PlayerGui)
 	ScreenGui.Name = WindowName	
 	ScreenGui.IgnoreGuiInset = true
