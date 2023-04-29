@@ -15,7 +15,7 @@ Frame = nil
 -------------------['UI Things']-------------
 
 
-function Library:CreateWindow(WindowName, TabName)
+function CreateWindow(WindowName, TabName)
 	ScreenGui = Instance.new('ScreenGui', PlayerGui)
 	ScreenGui.Name = WindowName	
 	ScreenGui.IgnoreGuiInset = true
