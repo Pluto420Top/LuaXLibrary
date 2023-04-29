@@ -1,21 +1,21 @@
-_G.Library = {}
+local Library = {}
 -----------[['Library']]--------------------
 
-LocalPlayer = game:GetService('Players').LocalPlayer
-PlayerGui = LocalPlayer.PlayerGui
+local LocalPlayer = game:GetService('Players').LocalPlayer
+local PlayerGui = LocalPlayer.PlayerGui
 -------------------['Player Things']--------
 
-UIS = game:GetService('UserInputService')
+local UIS = game:GetService('UserInputService')
 -------------------['Services']--------------
 
-ScreenGui = nil
-Frame = nil
+local ScreenGui = nil
+local Frame = nil
 
 
 -------------------['UI Things']-------------
 
 
-function _G.Library.CreateWindow:CreateWindow(WindowName, TabName)
+function Library:CreateWindow(WindowName, TabName)
 	local ScreenGui = Instance.new('ScreenGui', PlayerGui)
 	ScreenGui.Name = WindowName	
 	ScreenGui.IgnoreGuiInset = true
@@ -30,7 +30,7 @@ function _G.Library.CreateWindow:CreateWindow(WindowName, TabName)
 end
 
 
-
+return Library
 
 
 
