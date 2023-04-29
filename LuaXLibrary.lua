@@ -1,28 +1,28 @@
-Library = {}
+local Library = {}
 -----------[['Library']]--------------------
 
-LocalPlayer = game:GetService('Players').LocalPlayer
-PlayerGui = LocalPlayer.PlayerGui
+local LocalPlayer = game:GetService('Players').LocalPlayer
+local PlayerGui = LocalPlayer.PlayerGui
 -------------------['Player Things']--------
 
-UIS = game:GetService('UserInputService')
+local UIS = game:GetService('UserInputService')
 -------------------['Services']--------------
 
-ScreenGui = nil
-Frame = nil
+local ScreenGui = nil
+local Frame = nil
 
 
 -------------------['UI Things']-------------
 
 
 function Library:CreateWindow(WindowName, TabName)
-	ScreenGui = Instance.new('ScreenGui', PlayerGui)
-	ScreenGui.Name = WindowName	
+local ScreenGui = Instance.new('ScreenGui', PlayerGui)
+    ScreenGui.Name = WindowName	
 	ScreenGui.IgnoreGuiInset = true
 	
-	Frame = Instance.new('Frame', ScreenGui)
-	UICorner = Instance.new('UICorner', Frame)
-	Frame.Size = UDim2.new(0, 561, 0, 341)
+	local Frame = Instance.new('Frame', ScreenGui)
+	local UICorner = Instance.new('UICorner', Frame)
+    Frame.Size = UDim2.new(0, 561, 0, 341)
 	Frame.AnchorPoint = Vector2.new(0.5, 0.5)
 	Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
 	Frame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
@@ -31,6 +31,8 @@ end
 
 
 return Library
+
+
 
 
 
