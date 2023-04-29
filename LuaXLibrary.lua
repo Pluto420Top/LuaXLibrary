@@ -1,27 +1,27 @@
-local Library = {}
+Library = {}
 -----------[['Library']]--------------------
 
-local LocalPlayer = game:GetService('Players').LocalPlayer
-local PlayerGui = LocalPlayer.PlayerGui
+LocalPlayer = game:GetService('Players').LocalPlayer
+PlayerGui = LocalPlayer.PlayerGui
 -------------------['Player Things']--------
 
-local UIS = game:GetService('UserInputService')
+UIS = game:GetService('UserInputService')
 -------------------['Services']--------------
 
-local ScreenGui = nil
-local Frame = nil
+ScreenGui = nil
+Frame = nil
 
 
 -------------------['UI Things']-------------
 
 
-function Library:CreateWindow(WindowName, TabName)
-	local ScreenGui = Instance.new('ScreenGui', PlayerGui)
+function Library.New:CreateWindow(WindowName, TabName)
+	ScreenGui = Instance.new('ScreenGui', PlayerGui)
 	ScreenGui.Name = WindowName	
 	ScreenGui.IgnoreGuiInset = true
 	
-	local Frame = Instance.new('Frame', ScreenGui)
-	local UICorner = Instance.new('UICorner', Frame)
+	Frame = Instance.new('Frame', ScreenGui)
+	UICorner = Instance.new('UICorner', Frame)
 	Frame.Size = UDim2.new(0, 561, 0, 341)
 	Frame.AnchorPoint = Vector2.new(0.5, 0.5)
 	Frame.Position = UDim2.new(0.5, 0, 0.5, 0)
