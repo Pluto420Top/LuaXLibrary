@@ -13,16 +13,11 @@ local Frame = nil
 -------------------['UI Things']-------------
 
 
-function Library:CreateWindow(WindowName)
+function Library:CreateWindow(WindowName, TabName)
 	local ScreenGui = Instance.new('ScreenGui', PlayerGui)
 	ScreenGui.Name = WindowName	
 	ScreenGui.IgnoreGuiInset = true
-end
-
-
-
-
-function Library:CreateTab(TabName)
+	
 	local Frame = Instance.new('Frame', ScreenGui)
 	local UICorner = Instance.new('UICorner', Frame)
 	Frame.Size = UDim2.new(0, 561, 0, 341)
@@ -31,6 +26,10 @@ function Library:CreateTab(TabName)
 	Frame.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
 	Frame.Name = TabName
 end
+
+
+
+
 
 
 --function Library:CreateTextButton(ButtonName)
