@@ -30,7 +30,7 @@ function Library:CreateWindow(WindowName, TabName)
 end
 
 
-return _G.Library
+return Library
 
 
 
