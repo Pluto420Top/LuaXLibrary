@@ -1,15 +1,15 @@
-local Library = {}
+Library = {}
 -----------[['Library']]--------------------
 
-local LocalPlayer = game:GetService('Players').LocalPlayer
-local PlayerGui = LocalPlayer.PlayerGui
+LocalPlayer = game:GetService('Players').LocalPlayer
+PlayerGui = LocalPlayer.PlayerGui
 -------------------['Player Things']--------
 
-local UIS = game:GetService('UserInputService')
+UIS = game:GetService('UserInputService')
 -------------------['Services']--------------
 
-local ScreenGui = nil
-local Frame = nil
+ScreenGui = nil
+Frame = nil
 -------------------['UI Things']-------------
 
 
